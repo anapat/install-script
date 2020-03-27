@@ -22,6 +22,8 @@ apt-get install -y mariadb-server
 # Django
 sudo apt-get install -y python-dev default-libmysqlclient-dev
 sudo apt-get install -y python3 python3-dev build-essential libssl-dev libffi-dev libxml2-dev libxslt1-dev zlib1g-dev
+sudo apt-get install -y libpq-dev
+sudo apt install -y libxml2-dev libxmlsec1-dev libxmlsec1-openssl
 
 # Rabbit
 curl -fsSL https://github.com/rabbitmq/signing-keys/releases/download/2.0/rabbitmq-release-signing-key.asc | sudo apt-key add -
