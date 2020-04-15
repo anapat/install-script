@@ -8,6 +8,7 @@ sudo apt-get update
 apt-get install -y docker-ce docker-ce-cli containerd.io
 apt-get install -y python-pip
 apt-get install -y ffmpeg
+apt-get install -y git-flow
 mkdir -p ~/Project
 
 # Redis and Memcached and MariaDB
@@ -25,6 +26,7 @@ sudo apt-get install -y python3 python3-dev build-essential libssl-dev libffi-de
 sudo apt-get install -y libpq-dev
 sudo apt install -y libxml2-dev libxmlsec1-dev libxmlsec1-openssl
 
+
 # Rabbit
 curl -fsSL https://github.com/rabbitmq/signing-keys/releases/download/2.0/rabbitmq-release-signing-key.asc | sudo apt-key add -
 sudo apt-key adv --keyserver "hkps://keys.openpgp.org" --recv-keys "0x0A9AF2115F4687BD29803A206B73A36E6026DFCA"
@@ -36,3 +38,4 @@ apt-get install -y  erlang-base \
                     erlang-mnesia erlang-os-mon erlang-parsetools erlang-public-key \
                     erlang-runtime-tools erlang-snmp erlang-ssl \
                     erlang-syntax-tools erlang-tftp erlang-tools erlang-xmerl
+sudo apt-get install rabbitmq-server -y --fix-missing
